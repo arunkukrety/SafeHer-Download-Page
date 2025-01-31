@@ -12,11 +12,6 @@ import { Icon } from "leaflet";
 import {
   IoMenuOutline,
   IoCloseOutline,
-  IoChevronDownOutline,
-  IoChevronUpOutline,
-  IoCallOutline,
-  IoTimeOutline,
-  IoNavigateOutline,
 } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import logo_shield from "../assets/logo_shield.png";
@@ -198,7 +193,7 @@ function Location() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
-      {/* Navbar */}
+      
       <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24 md:h-28">
@@ -237,7 +232,7 @@ function Location() {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="px-4 py-6">
@@ -252,7 +247,7 @@ function Location() {
         )}
       </nav>
 
-      {/* Header Section */}
+      
       <div className="pt-32 pb-8 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold text-[#7c3aed] mb-2">
@@ -264,7 +259,7 @@ function Location() {
         </div>
       </div>
 
-      {/* Map Container */}
+    
       <div className="max-w-7xl mx-auto px-4 md:px-8 pb-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="h-[60vh] md:h-[70vh] relative">
@@ -278,7 +273,7 @@ function Location() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
 
-              {/* Circles that follow coordinates */}
+              
               <Circle
                 center={[coordinates.latitude, coordinates.longitude]}
                 pathOptions={{
@@ -300,7 +295,7 @@ function Location() {
                 radius={60}
               />
 
-              {/* Marker that moves with coordinates */}
+         
               <Marker
                 position={[coordinates.latitude, coordinates.longitude]}
                 icon={getCustomIcon(userData)}
