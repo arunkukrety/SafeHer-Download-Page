@@ -7,6 +7,10 @@ import {
   IoAlertCircleOutline,
   IoPersonAddOutline,
   IoLocationOutline,
+  IoChatbubbleOutline,
+  IoPeopleOutline,
+  IoShieldCheckmarkOutline,
+  IoLocation
 } from "react-icons/io5";
 import logo_shield from "./assets/logo_shield.png";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,6 +20,11 @@ import PhoneScreenshot5 from "./assets/screenshot_final1.jpg";
 import PhoneScreenshot6 from "./assets/screenshot_final2.jpg";
 import PhoneScreenshot7 from "./assets/screenshot_final3.jpg";
 import PhoneScreenshot8 from "./assets/screenshot_final4.jpg";
+import PhoneScreenshot9 from "./assets/screenshot_final5.jpg";
+import PhoneScreenshot10 from "./assets/screenshot_final6.jpg";
+
+import { IoIosChatbubbles } from "react-icons/io";
+import { PiMicrophoneStageFill } from "react-icons/pi";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -195,15 +204,15 @@ function App() {
                       </p>
                     </div>
                     <div className="p-6 rounded-2xl bg-purple-50 hover:scale-105 transition-all duration-500 scroll-animate">
-                      <IoCheckmarkCircleOutline
+                      <IoLocation
                         size={40}
                         className="text-[#7c3aed] mb-4"
                       />
                       <h3 className="text-xl font-bold text-[#7c3aed] mb-2">
-                        Real-time Monitoring
+                        Real-time Location Sharing
                       </h3>
                       <p className="text-purple-700">
-                        24/7 AI-powered safety monitoring system.
+                        Share your location with friends and family for safety.
                       </p>
                     </div>
                     <div className="p-6 rounded-2xl bg-purple-50 hover:scale-105 transition-all duration-500 scroll-animate">
@@ -215,14 +224,14 @@ function App() {
                         Emergency Alert
                       </h3>
                       <p className="text-purple-700">
-                        One-tap SOS feature with location sharing.
+                        One-tap SOS feature linked directly with women helpline number.
                       </p>
                     </div>
                   </div>
                 </div>
               </section>
 
-              {/* Companion Matching Section - Replacing Safety Score Section */}
+              {/* Companion Matching Section */}
               <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-white">
                 <div className="max-w-7xl mx-auto">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -257,20 +266,82 @@ function App() {
                               Location Based
                             </h4>
                             <p className="text-sm text-purple-700">
-                              Find companions in your area
+                              Find companions and trips in your area
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-4 bg-white p-4 rounded-lg shadow-lg">
+                          <div className="h-12 w-12 rounded-full bg-gradient-to-r from-[#7c3aed] to-purple-500 flex items-center justify-center text-white">
+                            <IoIosChatbubbles size={24} />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-[#7c3aed]">
+                              In-App Chat
+                            </h4>
+                            <p className="text-sm text-purple-700">
+                              Chat with companions before meeting to build trust.
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="relative scroll-animate">
-                      <div className="bg-white p-8 rounded-2xl shadow-xl">
-                        <div className="aspect-square relative bg-gradient-to-br from-[#9f86ff] to-[#6f5c91] rounded-2xl overflow-hidden">
-                          <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-medium">
-                            Companion Matching Interface
-                          </div>
-                        </div>
-                      </div>
+                    <div className="relative scroll-animate max-w-[300px] mx-auto">
+  <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className="aspect-[9/19.5] relative">
+      <img
+        src={PhoneScreenshot9}
+        alt="Phone Screenshot 9"
+        className="w-full h-full object-contain p-2" // Added padding to inset the image slightly
+      />
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Additional Features Section */}
+              <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+                <div className="max-w-7xl mx-auto">
+                  <h2 className="text-3xl md:text-4xl font-bold text-center text-[#7c3aed] mb-12 scroll-animate">
+                    More Upcoming Features to Enhance Your Experience
+                  </h2>
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div className="p-6 rounded-2xl bg-purple-50 hover:scale-105 transition-all duration-500 scroll-animate">
+                      <IoChatbubbleOutline
+                        size={40}
+                        className="text-[#7c3aed] mb-4"
+                      />
+                      <h3 className="text-xl font-bold text-[#7c3aed] mb-2">
+                        In-App Group Chat
+                      </h3>
+                      <p className="text-purple-700">
+                        Create group chats and do dicussions about your trips.
+                      </p>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-purple-50 hover:scale-105 transition-all duration-500 scroll-animate">
+                      <IoPeopleOutline
+                        size={40}
+                        className="text-[#7c3aed] mb-4"
+                      />
+                      <h3 className="text-xl font-bold text-[#7c3aed] mb-2">
+                        Group Trips
+                      </h3>
+                      <p className="text-purple-700">
+                        Plan group trips with multiple verified companions.
+                      </p>
+                    </div>
+                    <div className="p-6 rounded-2xl bg-purple-50 hover:scale-105 transition-all duration-500 scroll-animate">
+                      <PiMicrophoneStageFill
+                        size={40}
+                        className="text-[#7c3aed] mb-4"
+                      />
+                      <h3 className="text-xl font-bold text-[#7c3aed] mb-2">
+                        Local Events Recommendations
+                      </h3>
+                      <p className="text-purple-700">
+                        Get recommendations for local events and activities.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -291,12 +362,6 @@ function App() {
                         onClick={handleDownload}
                         className="bg-white text-[#7c3aed] px-8 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-300/40 hover:scale-105 active:scale-95 text-lg"
                       >
-                        Download for iOS
-                      </button>
-                      <button
-                        onClick={handleDownload}
-                        className="bg-white text-[#7c3aed] px-8 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg hover:shadow-purple-300/40 hover:scale-105 active:scale-95 text-lg"
-                      >
                         Download for Android
                       </button>
                     </div>
@@ -304,14 +369,7 @@ function App() {
                 </div>
               </section>
 
-              {/* Simple Footer */}
-              <footer className="bg-white py-8 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto text-center">
-                  <p className="text-purple-700">
-                    Created for HackHarvard 2024
-                  </p>
-                </div>
-              </footer>
+
             </div>
           }
         />
