@@ -39,8 +39,8 @@ function App() {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/README.md";
-    link.download = "SafeHer-README.md";
+    link.href = "/SafeHer.apk"; 
+    link.download = "SafeHer.apk"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
