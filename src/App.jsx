@@ -183,6 +183,24 @@ function App() {
                 </div>
               </section>
 
+              {/* Demo Video Section */}
+              <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 via-white to-purple-50">
+                <div className="max-w-4xl mx-auto text-center space-y-8">
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#7c3aed] mb-8 scroll-animate">
+                    See SafeHer in Action
+                  </h2>
+                  <div className="relative pt-[56.25%] rounded-2xl overflow-hidden shadow-xl scroll-animate">
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/49zJt6YnK1M"
+                      title="SafeHer App Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              </section>
+
               {/* Security Features Section */}
               <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
                 <div className="max-w-7xl mx-auto">
